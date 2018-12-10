@@ -1,0 +1,20 @@
+application:
+    name: source-app
+
+server:
+  port: 8087
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        greetings-out:
+          destination: greetings
+          contentType: application/json
+          
+          
+          
+          
+ #   kafka:
+ #       binder:
+ #         brokers: localhost:9092          
